@@ -7,4 +7,3 @@ for index in range(122, 96, -1):
     else:
         answer += chr(index * 1)
 print('{}'.format(answer), end='')
-
