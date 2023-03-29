@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def last_division(my_list_1, my_list_2, list_length):
+def list_division(my_list_1, my_list_2, list_length):
     """Divides two lists element by element"""
 
     new_list = []
