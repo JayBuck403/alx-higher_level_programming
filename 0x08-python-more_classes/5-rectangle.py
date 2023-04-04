@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/python3
 """Rectangle Class"""
 
@@ -65,7 +63,7 @@ class Rectangle:
             if i != self.__height - 1:
                 rectangle.append("\n")
         return ("".join(rectangle))
-    
+
     def __repr__(self):
         """Return the etring representation of the Rectangle"""
         rectangle = "Rectangle(" + str(self.__width)
