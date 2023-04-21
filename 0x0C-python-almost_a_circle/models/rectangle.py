@@ -85,6 +85,11 @@ class Rectangle(Base):
         else:
             print("")
             return
+        [print("") for y in range(self.y)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
 
     def update(self, *args, **kwargs):
         """Update rectangle with variable number of arguments"""
@@ -127,9 +132,9 @@ class Rectangle(Base):
         """
         return {
             "id": self.id,
-            "width": self.width
-            "height": self.height
-            "x": self.x
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
             "y": self.y
         }
 
