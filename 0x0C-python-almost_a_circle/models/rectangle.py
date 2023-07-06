@@ -7,7 +7,6 @@ class Rectangle(Base):
     """
     Creates Rectangle object
     """
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initializes rectangle object
@@ -51,7 +50,6 @@ class Rectangle(Base):
         """Getter for x"""
         return self.__x
 
-
     @x.setter
     def x(self, value):
         """Setter for x"""
@@ -65,7 +63,6 @@ class Rectangle(Base):
     def y(self):
         """Getter for y"""
         return self.__y
-
 
     @y.setter
     def y(self, value):
