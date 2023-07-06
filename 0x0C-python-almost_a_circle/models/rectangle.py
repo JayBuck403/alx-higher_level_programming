@@ -76,15 +76,10 @@ class Rectangle(Base):
 
     def display(self):
         """Print the rectangle object"""
-        if self.width != 0 or self.height != 0:
-            [print("") for y in range(self.y)]
-            for h in range(self.height):
-                [print(" ", end="") for x in range(self.x)]
-                [print("#", end="") for w in range(self.width)]
-                print("")
-        else:
+        if self.width == 0 or self.height == 0:
             print("")
             return
+
         [print("") for y in range(self.y)]
         for h in range(self.height):
             [print(" ", end="") for x in range(self.x)]
@@ -109,7 +104,7 @@ class Rectangle(Base):
                     self.x == arg
                 elif i == 4:
                     self.y == arg
-                a += 1
+                i += 1
         elif kwargs and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
@@ -141,4 +136,5 @@ class Rectangle(Base):
     def __str__(self):
         """String Representation of rectangle object"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                self.x, self.y, self.width, self.height)
+                                                self.x, self.y, 
+                                                self.width, self.height)
